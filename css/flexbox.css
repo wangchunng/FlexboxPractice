@@ -1,0 +1,65 @@
+/* ==========================
+    Mobiles 
+==========================*/
+
+[class*="fea-"] {
+    width: 94%;
+    font-size: 1em;
+    background: rgb(128, 248, 248);
+}
+
+aside{
+	display: none;
+}
+article{
+	width: 100%;
+}
+nav>div{			
+		flex-basis: 100%;
+}
+
+/* ==========================
+    Tablets
+==========================*/
+
+@media only screen and (min-width: 600px)   {
+    [class*="fea-"]  {
+        font-size: 1.25em;
+        width: 44%;
+        background: rgb(176, 240, 49);
+    }
+    .sec-3{
+        width: 94%;
+    }
+	
+	article{
+		width: 80%;
+	}
+	aside{
+		display: block;
+	}
+	nav>div{			
+		flex-basis: 100%;
+	}
+}
+
+/* ==========================
+   Desktops  
+==========================*/
+
+@media only screen and (min-width: 768px)   {
+    [class*="sec-"] {
+        font-size: 1.5em;
+        width: 27%;
+        background-color: lightgreen;
+    }
+	article{
+		width: 80%;
+	}
+	aside{
+		display: block;
+	}
+	nav>div{			
+		flex-basis: 30%;
+	}
+}
